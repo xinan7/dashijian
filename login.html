@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
     <!-- 引入jquery -->
     <script src="/assets/lib/jquery.js"></script>
+    <!-- 引入优化的js文件 -->
+    <script src="/assets/js/baseAPI.js"></script>
+    <!-- 引入layui的js文件 -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 引入自己的js文件 -->
     <script src="/assets/js/login.js"></script>
 </head>
@@ -28,45 +32,47 @@
         <div class="login-txt"></div>
         <!-- 登录盒子 -->
         <div class="login">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="login_req">
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-username"></i> 
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入user"
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入user"
                         autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-password"></i> 
-                    <input type="password" name="title" required lay-verify="required" placeholder="请输入pwd"
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入pwd"
                         autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">sign on</button>
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">sign
+                        on</button>
                 </div>
                 <div class="layui-form-item">
                     <a href="javascript:;" id="goreg">去注册账号</a>
                 </div>
-            </form>    
+            </form>
         </div>
         <!-- 注册盒子 -->
         <div class="reg">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="reg_req">
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-username"></i> 
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入user"
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required|pwd" placeholder="请输入user"
                         autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-password"></i> 
-                    <input type="password" name="password" required lay-verify="required" placeholder="请输入pwd"
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required id="pwd" lay-verify="required|pwd"
+                        placeholder="请输入pwd" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="regpwd" required lay-verify="required|regpwd" placeholder="请再次输入pwd"
                         autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-password"></i> 
-                    <input type="password" name="regpwd" required lay-verify="required" placeholder="请再次输入pwd"
-                        autocomplete="off" class="layui-input">
-                </div>
-                <div class="layui-form-item">
-                    <button type="button" class="layui-btn layui-btn-normal layui-btn-fluid">reg finish</button>
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">reg
+                        finish</button>
                 </div>
                 <div class="layui-form-item">
                     <a href="javascript:;" id="gologin">去登陆</a>

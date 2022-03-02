@@ -19,3 +19,25 @@ login和reg盒子  ：区域盒子水平垂直居中
 点击超链接切换登录和注册盒子  jquery 的点击事件  show 和hide 内置方法
 
 表单盒子----layui里边粘
+
+登录表单验证 混入layui.js
+var form=layui.form
+form.vaerify设置验证条件
+给密码框的lay verify属性中加上名字
+
+注册表单功能实现
+献给表单添加id 用提交事件 发起post请求
+参数可以使用jq的属性选择器
+用layui生成提示框 提示是否成功  var layer=layui.layer
+成功则跳转 
+
+登录表单功能  先使用提交事件  然后发ajax的post请求
+数据使用jq的收集用户信息的方法serialize()
+接收值res返回的那个token 
+用localstorage把token储存到本地存储  然后跳转
+
+
+页面优化：接口的优化
+使用$.ajaxPrefilter()方法把根路径和options的url拼接
+
+提交到git hub中
