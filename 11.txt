@@ -6,3 +6,16 @@ tinymce：富文本编辑
 
 git hub 管理项目
 创建本地仓库        上传
+创建本地分支  切换到login分支上
+根路径查找文件
+CSS:设置html body全屏  背景
+logo图：img标签
+
+login和reg盒子  ：区域盒子水平垂直居中
+标题
+
+登录和注册盒子 超链接   注册盒子默认隐藏
+
+点击超链接切换登录和注册盒子  jquery 的点击事件  show 和hide 内置方法
+
+表单盒子----layui里边粘
