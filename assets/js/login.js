@@ -60,8 +60,6 @@ $(function () {
                 //把res.token存入本地存储  localstrage中  后面验证需要用
                 localStorage.setItem('token', res.token)
                 location.href = 'index.html'
-
-
             }
         })
     })
