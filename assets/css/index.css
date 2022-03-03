@@ -1,0 +1,39 @@
+.layui-body{
+    overflow: hidden;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.layui-footer{
+    text-align: center;
+}
+.layui-icon{
+    margin-right: 10px;
+}
+.layui-nav-child .layui-icon{
+    margin-left: 20px;
+}
+.text_avatar{
+    display: inline;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: black;
+    border-radius: 50%;
+}
+.user_info img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 20px;
+}
+.layui-nav-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 45%;
+    margin: 10px;
+    margin-left: 10px;
+}
