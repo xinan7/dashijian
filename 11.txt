@@ -41,3 +41,8 @@ form.vaerify设置验证条件
 使用$.ajaxPrefilter()方法把根路径和options的url拼接
 
 提交到git hub中
+
+
+
+个人中心功能
+1页面搭建：  创建文件夹   引入文件夹  新的分支

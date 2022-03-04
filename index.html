@@ -30,9 +30,9 @@
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">设置</a></dd>
-                        <dd><a href="">设置nm</a></dd>
-                        <dd><a href="">滚出去</a></dd>
+                        <dd><a href="/user/user1.html" target="fm">设置</a></dd>
+                        <dd><a href="/user/avatar.html" target="fm">设置nm</a></dd>
+                        <dd><a href="/user/user2.html" target="fm">滚出去</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
@@ -49,7 +49,7 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <div href="javascript:;" class="user_info ">
-                    <img src="/assets/images/68e85bba18bfeaffca5ebbc39365df35.jpeg" alt="" >
+                    <img src="/assets/images/68e85bba18bfeaffca5ebbc39365df35.jpeg" alt="" class="layui-nav-img">
                     <span class=" text_avatar">A</span>
                     <span id="welcome">欢迎***</span>
                 </div>
@@ -70,13 +70,11 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;">个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">基本资料</a></dd>
-                            <dd><a href="javascript:;">更换头像</a></dd>
-                            <dd><a href="javascript:;">重置密码</a></dd>
+                            <dd><a href="/user/user1.html" target="fm">基本资料</a></dd>
+                            <dd><a href="/user/avatar.html" target="fm">更换头像</a></dd>
+                            <dd><a href="/user/user2.html" target="fm">重置密码</a></dd>
                         </dl>
                     </li>
-
-
                 </ul>
             </div>
         </div>
@@ -84,7 +82,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src="/home/dashboard.html" frameborder="0"></iframe>
+            <iframe src="/home/dashboard.html" name="fm" frameborder="0"></iframe>
         </div>
 
 

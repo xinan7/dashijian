@@ -4,9 +4,6 @@ $(function () {
         $.ajax({
             method: 'get',
             url: '/my/userinfo',
-            headers: {
-                Authorization: localStorage.getItem('token') || ''
-            },
             success: function (res) {
                 if (res.status !== 0) {
                     return layer.msg('认证信息失败')
@@ -31,7 +28,7 @@ $(function () {
             $('.layui-nav-img').prop('src', data.user_pic).show()
             $('.text_avatar').hide()
         } else {
-            $('.layui-nav-img').show()
+            $('.layui-nav-img').hide()
             $('.text_avatar').html(name[0].toUpperCase()).show()
         }
     }
