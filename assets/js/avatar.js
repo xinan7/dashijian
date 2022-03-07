@@ -42,7 +42,7 @@ $('#btnsend').on('click', function () {
                 return layer.msg('头像上传失败')
             }
             layer.msg('头像上传成功')
-            window.parent.getUser()
+            // window.parent.getUser()
         }
     })
 })

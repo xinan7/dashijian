@@ -3,7 +3,8 @@
     margin: 0;
 }
 body{
-    background: #f2f2f2;
+    background:url(/assets/images/微信图片_20220212171205.jpg);
+
 }
 .layui-card{
     width: 500px;
