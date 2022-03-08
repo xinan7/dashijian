@@ -46,3 +46,10 @@ form.vaerify设置验证条件
 
 个人中心功能
 1页面搭建：  创建文件夹   引入文件夹  新的分支
+
+文章管理  
+1准备工作 创建分支 wz文件夹
+2布局页面 layui中的table 在colgroup中  cols的宽度   ctrl+c    ctrl+v
+3获取文章类别的数据  渲染页面 使用模板引擎  template
+
+添加类别 使用layui创建弹窗  qwq
