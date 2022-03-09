@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+    background: url(/assets/images/微信图片_20220212171205.jpg);
+}
+
+.layui-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#xinan{
+    padding: 15px;
+
+}
+#xinan  button:first-of-type{
+    margin-left: 110px;
+}
+#tc  button{
+    margin-left: 110px;
+}
